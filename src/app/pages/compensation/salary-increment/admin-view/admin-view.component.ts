@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { KeycloakService } from 'keycloak-angular';
 
 @Component({
-  selector: 'app-admin-view',
-  templateUrl: './admin-view.component.html',
-  styleUrl: './admin-view.component.css'
+    selector: 'app-admin-view',
+    templateUrl: './admin-view.component.html',
+    styleUrl: './admin-view.component.css',
+    standalone: false
 })
 export class AdminViewComponent implements OnInit {
   isAdmin = false;

@@ -4,9 +4,10 @@ import ApexCharts from 'apexcharts';
 import { SalaryIncrementDashboardDTO } from '../../dto/dashboard.dto';
 
 @Component({
-  selector: 'app-donut-chart-dashboard',
-  templateUrl: './donut-chart-dashboard.component.html',
-  styleUrls: ['./donut-chart-dashboard.component.css'],
+    selector: 'app-donut-chart-dashboard',
+    templateUrl: './donut-chart-dashboard.component.html',
+    styleUrls: ['./donut-chart-dashboard.component.css'],
+    standalone: false
 })
 export class DonutChartDashboardComponent implements OnInit, AfterViewInit {
   data: SalaryIncrementDashboardDTO[] = [];

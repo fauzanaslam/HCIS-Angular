@@ -4,9 +4,10 @@ import { KeycloakProfile } from 'keycloak-js';
 import {Router} from '@angular/router'
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css',
+    selector: 'app-sidebar',
+    templateUrl: './sidebar.component.html',
+    styleUrl: './sidebar.component.css',
+    standalone: false
 })
 export class SidebarComponent implements OnInit {
   public isLoggedIn = false;
