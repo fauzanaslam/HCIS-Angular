@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
+import { KeycloakService } from 'keycloak-angular';
+import { KeycloakProfile } from 'keycloak-js';
+
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'just4fun';
+  public isLoggedIn = false;
+  public userProfile: KeycloakProfile | null = null;
+
+  constructor(private readonly keycloak: KeycloakService) {}
+
+
 }
